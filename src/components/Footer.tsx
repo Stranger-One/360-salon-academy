@@ -1,6 +1,7 @@
 'use client';
 
 import { Clock, Mail, Phone, Sparkles } from "lucide-react";
+import Image from "next/image";
 import { FaHeadset } from "react-icons/fa";
 
 
@@ -97,9 +98,10 @@ export default function Footer () {
           <div>
             <div className="flex items-center gap-2 mb-4">
               {/* The 360 logo circle - using CSS to mimic the look */}
-              <div className="bg-linear-to-r from-yellow-500 to-yellow-600 h-10 w-10 flex items-center justify-center p-4 rounded-full font-bold">
+              {/* <div className="bg-linear-to-r from-yellow-500 to-yellow-600 h-10 w-10 flex items-center justify-center p-4 rounded-full font-bold">
                 360
-              </div>
+              </div> */}
+               <Image src='/logo-white.png' height={40} width={40} alt="logo" className="object-cover rounded-full " />
               <h2 className="text-2xl font-bold text-white font-playfair">
                 360 Salon & Academy
               </h2>

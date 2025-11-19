@@ -1,6 +1,7 @@
 'use client';
 
 import { Sparkles } from "lucide-react";
+import Image from "next/image";
 
 export default function Header () {
     const navLinks = [
@@ -15,7 +16,9 @@ export default function Header () {
     <header className="fixed top-0 w-full bg-white shadow-sm z-30">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-2">
-          <div className="bg-linear-to-r from-yellow-500 to-yellow-600 h-10 w-10 flex items-center justify-center p-4 rounded-full font-bold">360</div>
+          {/* <div className="bg-linear-to-r from-yellow-500 to-yellow-600 h-10 w-10 flex items-center justify-center p-4 rounded-full font-bold">
+          </div> */}
+            <Image src='/logo-black.png' height={40} width={40} alt="logo" className="object-cover rounded-full " />
           <span className="text-2xl font-bold text-gray-800 font-playfair">
             360 Salon & Academy
           </span>
